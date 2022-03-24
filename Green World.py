@@ -60,5 +60,8 @@ else:
   y = np.array([AP, w])
   mylabels = ["Oxygen", "Carbon dioxide"]
 
-  plt.pie(y, labels=mylabels)
-  plt.show()
+  myexplode = [0.05, 0]
+
+  plt.pie(y, labels = mylabels, explode = myexplode)
+
+  plt.show() 
